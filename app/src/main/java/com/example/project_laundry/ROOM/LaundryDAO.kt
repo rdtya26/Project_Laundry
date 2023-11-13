@@ -16,7 +16,7 @@ interface LaundryDAO {
     fun hapus (laundry: Laundry)
 
 
-    @Query ("SELECT * FROM TB_Laundry")
+    @Query ("SELECT * FROM tb_cuci")
     fun getAll(): List<Laundry>
 
 
@@ -30,7 +30,7 @@ interface LaundryDAO {
     @Delete
     fun hapus2(laundry2: Laundry2)
 
-    @Query ("SELECT * FROM TB_Laundry2")
+    @Query ("SELECT * FROM tb_setrika")
     fun getAll2(): List<Laundry2>
 
     //Register

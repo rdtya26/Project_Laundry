@@ -4,7 +4,7 @@ import androidx.room.ColumnInfo
 import androidx.room.Entity
 import androidx.room.PrimaryKey
 
-@Entity ("TB_AntrianSetrika")
+@Entity (tableName = "tb_setrika")
 data class Laundry2(
     @PrimaryKey (autoGenerate = true)
     @ColumnInfo (name ="idsetrika")
