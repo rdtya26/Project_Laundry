@@ -38,7 +38,11 @@ class tampildata : AppCompatActivity() {
                 override fun onEdit(laundry: Laundry) {
                 updateData(laundry)
             }
-        }
+
+                override fun onhapus(laundry: Laundry) {
+                    TODO("Not yet implemented")
+                }
+            }
 
         )
         binding.listcuci.adapter = adapterlaundry

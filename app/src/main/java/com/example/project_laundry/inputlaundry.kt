@@ -19,7 +19,7 @@ class inputlaundry : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         binding = ActivityInputlaundryBinding.inflate(layoutInflater)
         setContentView(binding.root)
-        binding.inputcuci.setOnClickListener {
+        binding.editlaundry.setOnClickListener {
             this.insertcucian()
         }
     }
