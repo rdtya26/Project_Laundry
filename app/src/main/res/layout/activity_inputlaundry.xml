@@ -120,7 +120,7 @@
         app:layout_constraintTop_toBottomOf="@id/inputnocuci" />
 
     <Button
-        android:id="@+id/editlaundry"
+        android:id="@+id/input_data"
         android:layout_width="140dp"
         android:layout_height="48dp"
         android:backgroundTint="#0D4394"

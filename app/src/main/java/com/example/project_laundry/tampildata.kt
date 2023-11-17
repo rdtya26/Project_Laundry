@@ -38,6 +38,11 @@ class tampildata : AppCompatActivity() {
                 override fun onEdit(laundry: Laundry) {
                 updateData(laundry)
             }
+
+                override fun onhapus(laundry: Laundry) {
+
+                }
+
         }
 
         )
@@ -56,6 +61,24 @@ class tampildata : AppCompatActivity() {
             )
         }
     }
+
+    private fun hapus(laundry: Laundry){
+        val dialog = AlertDialog.Builder(this)
+        dialog.apply {
+            setTitle("detail")
+            setMessage("yakin akan menghapus")
+            setNegativeButton("batal"){
+                dialogInterface:DialogInterface,i:Int->
+                dialogInterface.dismiss()
+            }
+            setPositiveButton("hapus"){
+                dialogInterface:DialogInterface,i:Int->
+                dialogInterface.dismiss()
+        }
+            dialog.show()
+    }
+    }
+
     private fun detail(laundry: Laundry){
         val dialog = AlertDialog.Builder(this)
         dialog.apply {
