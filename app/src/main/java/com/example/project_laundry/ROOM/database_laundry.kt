@@ -6,13 +6,7 @@ import androidx.room.Room
 import androidx.room.RoomDatabase
 import com.example.project_laundry.register
 
-/* dari mz_zub:
-1. perbaikan entitas dari [Laundry::class],[Laundry2::class] menjadi [Laundry::class, Laundry2::class]
-2. Penambahan exportSchema
-3. Data table Register belum masuk
 
---> Nilai kelompokmu kurang banyak soale error e okeh men
- */
 @Database(entities = [Laundry::class, Laundry2::class, Register::class], version = 2, exportSchema = false)
 abstract class database_laundry : RoomDatabase(){
     abstract fun laundrydao() : LaundryDAO

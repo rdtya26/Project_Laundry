@@ -8,9 +8,7 @@ import androidx.appcompat.app.AlertDialog
 import androidx.recyclerview.widget.DividerItemDecoration
 import androidx.recyclerview.widget.LinearLayoutManager
 import androidx.recyclerview.widget.LinearLayoutManager.VERTICAL
-import com.example.project_laundry.ROOM.Laundry
-import com.example.project_laundry.ROOM.adapterlaundry
-import com.example.project_laundry.ROOM.database_laundry
+import com.example.project_laundry.ROOM.*
 import com.example.project_laundry.databinding.ActivityTampildataBinding
 import kotlinx.coroutines.CoroutineScope
 import kotlinx.coroutines.Dispatchers
@@ -33,6 +31,7 @@ class tampildata : AppCompatActivity() {
             object : adapterlaundry.OnClickListener{
                 override fun onDetail(laundry: Laundry) {
                    detail(laundry)
+
                 }
 
                 override fun onEdit(laundry: Laundry) {
@@ -40,10 +39,11 @@ class tampildata : AppCompatActivity() {
             }
 
                 override fun onhapus(laundry: Laundry) {
-                    TODO("Not yet implemented")
-                }
-            }
+                    hapus(laundry)
 
+                }
+
+        }
         )
         binding.listcuci.adapter = adapterlaundry
         binding.listcuci.layoutManager = LinearLayoutManager(applicationContext,
@@ -60,6 +60,24 @@ class tampildata : AppCompatActivity() {
             )
         }
     }
+
+    private fun hapus(laundry: Laundry){
+        val dialog = AlertDialog.Builder(this)
+        dialog.apply {
+            setTitle("detail")
+            setMessage("yakin akan menghapus")
+            setNegativeButton("batal"){
+                dialogInterface:DialogInterface,i:Int->
+                dialogInterface.dismiss()
+            }
+            setPositiveButton("hapus"){
+                dialogInterface:DialogInterface,i:Int->
+                dialogInterface.dismiss()
+        }
+            dialog.show()
+    }
+    }
+
     private fun detail(laundry: Laundry){
         val dialog = AlertDialog.Builder(this)
         dialog.apply {
@@ -67,6 +85,24 @@ class tampildata : AppCompatActivity() {
             setMessage("lihat detail laundry mu")
             setNegativeButton("batal"){
                 dialogInterface:DialogInterface,i:Int->
+                dialogInterface.dismiss()
+            }
+            setPositiveButton("Edit"){
+                    dialogInterface:DialogInterface,i:Int->
+                dialogInterface.dismiss()
+            }
+        }
+        startActivity(Intent(this,detail::class.java))
+    }
+
+
+    private fun detail2(laundry2: Laundry2){
+        val dialog = AlertDialog.Builder(this)
+        dialog.apply {
+            setTitle("detail")
+            setMessage("lihat detail laundry mu")
+            setNegativeButton("batal"){
+                    dialogInterface:DialogInterface,i:Int->
                 dialogInterface.dismiss()
             }
             setPositiveButton("Edit"){
@@ -98,8 +134,6 @@ class tampildata : AppCompatActivity() {
             dialog.show()
         }
     }
-
-
     fun getdata(){
         binding.listcuci.layoutManager = LinearLayoutManager(this)
         CoroutineScope(Dispatchers.IO).launch {
