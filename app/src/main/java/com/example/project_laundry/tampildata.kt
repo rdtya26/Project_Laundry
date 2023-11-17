@@ -45,6 +45,7 @@ class tampildata : AppCompatActivity() {
 
         }
         )
+        
         binding.listcuci.adapter = adapterlaundry
         binding.listcuci.layoutManager = LinearLayoutManager(applicationContext,
         VERTICAL,false)
@@ -95,24 +96,6 @@ class tampildata : AppCompatActivity() {
         startActivity(Intent(this,detail::class.java))
     }
 
-
-    private fun detail2(laundry2: Laundry2){
-        val dialog = AlertDialog.Builder(this)
-        dialog.apply {
-            setTitle("detail")
-            setMessage("lihat detail laundry mu")
-            setNegativeButton("batal"){
-                    dialogInterface:DialogInterface,i:Int->
-                dialogInterface.dismiss()
-            }
-            setPositiveButton("Edit"){
-                    dialogInterface:DialogInterface,i:Int->
-                dialogInterface.dismiss()
-            }
-        }
-        startActivity(Intent(this,detail::class.java))
-    }
-
     private fun updateData(laundry: Laundry){
        val dialog = AlertDialog.Builder(this)
         dialog.apply {
@@ -134,6 +117,7 @@ class tampildata : AppCompatActivity() {
             dialog.show()
         }
     }
+
     fun getdata(){
         binding.listcuci.layoutManager = LinearLayoutManager(this)
         CoroutineScope(Dispatchers.IO).launch {
@@ -145,6 +129,7 @@ class tampildata : AppCompatActivity() {
             }
         binding.listcuci.adapter = adapterlaundry
         }
+
     override fun onResume() {
         super.onResume()
         getdata()

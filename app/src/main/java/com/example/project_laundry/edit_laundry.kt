@@ -40,9 +40,7 @@ class edit_laundry : AppCompatActivity() {
                 binding.inputnoedit.setText("")
                 binding.inputberatedit.setText("")
 
-
-                startActivity(
-                    Intent(
+                startActivity(Intent(
                         this,detail::class.java
                     )
                 )

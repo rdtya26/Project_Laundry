@@ -1,41 +1,35 @@
 package com.example.project_laundry
 
+import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.widget.Button
 import android.widget.EditText
+import android.widget.TextView
 import android.widget.Toast
 
 class login : AppCompatActivity() {
 
-    var et_user = findViewById<EditText>(R.id.hintuser)
-    var et_pass = findViewById<EditText>(R.id.hintpass)
-    var btnlogin = findViewById<Button>(R.id.login)
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_login)
 
-
-            btnlogin.setOnClickListener {
-                var username = et_user
-                var password = et_pass
-                Toast.makeText(this@login, "username", Toast.LENGTH_SHORT)
-                    .show()
-
-                if (username.getText().toString().length == 0) {
-                    //jika username kosong
-                    username.setError("mohon isi username!!")
-                } else
-                    if (password.getText().toString().length == 0) {
-                        //jika password kosong
-                        password.setError("mohon isi password!!")
-                    }
+        var et_user = findViewById(R.id.loginuser) as EditText
+        var et_pass = findViewById(R.id.loginpass) as EditText
+        var btnlogin = findViewById(R.id.login) as Button
+        var buatakunbaru = findViewById(R.id.buatakunbaru) as TextView
 
 
-            }
-
-
-        }
+       btnlogin.setOnClickListener{
+           val username = et_user.text.toString()
+           val password = et_pass.text.toString()
+           Toast.makeText(this@login, "mm", Toast.LENGTH_SHORT).show()
+           startActivity(Intent(this,register::class.java))
+       }
     }
+}
+
+
+
 

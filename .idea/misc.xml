@@ -1,3 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="DesignSurface">
     <option name="filePathToZoomLevelMap">
@@ -27,6 +28,7 @@
         <entry key="..\:/Project_Laundry/app/src/main/res/layout/activity_detail.xml" value="0.20416666666666666" />
         <entry key="..\:/Project_Laundry/app/src/main/res/layout/activity_edit_laundry.xml" value="0.20416666666666666" />
         <entry key="..\:/Project_Laundry/app/src/main/res/layout/activity_inputcucian.xml" value="0.20416666666666666" />
+        <entry key="..\:/Project_Laundry/app/src/main/res/layout/activity_inputlaundry.xml" value="0.17592592592592593" />
         <entry key="..\:/Project_Laundry/app/src/main/res/layout/activity_inputsetrika.xml" value="0.20416666666666666" />
         <entry key="..\:/Project_Laundry/app/src/main/res/layout/activity_login.xml" value="0.20416666666666666" />
         <entry key="..\:/Project_Laundry/app/src/main/res/layout/activity_main.xml" value="0.20416666666666666" />
@@ -34,17 +36,15 @@
         <entry key="..\:/Project_Laundry/app/src/main/res/layout/activity_pilihcucian.xml" value="0.20416666666666666" />
         <entry key="..\:/Project_Laundry/app/src/main/res/layout/activity_regis.xml" value="0.20416666666666666" />
         <entry key="..\:/Project_Laundry/app/src/main/res/layout/activity_register.xml" value="0.20416666666666666" />
+        <entry key="..\:/Project_Laundry/app/src/main/res/layout/activity_setrika.xml" value="0.1" />
         <entry key="..\:/Project_Laundry/app/src/main/res/layout/activity_tampildata.xml" value="0.20416666666666666" />
-        <entry key="..\:/zahwa psts/zahwa_folder/app/src/main/res/layout/activity_dashboard.xml" value="0.20416666666666666" />
-        <entry key="..\:/zahwa psts/zahwa_folder/app/src/main/res/layout/activity_inputlaundry.xml" value="0.20416666666666666" />
-        <entry key="..\:/zahwa psts/zahwa_folder/app/src/main/res/layout/activity_login.xml" value="0.20416666666666666" />
-        <entry key="..\:/zahwa psts/zahwa_folder/app/src/main/res/layout/activity_tampildata.xml" value="0.13796296296296295" />
-        <entry key="..\:/zahwa psts/zahwa_folder/app/src/main/res/layout/adaptersetrika.xml" value="0.20416666666666666" />
-        <entry key="..\:/zahwa psts/zahwa_folder/app/src/main/res/layout/tampil_setrika.xml" value="0.20416666666666666" />
+        <entry key="..\:/Project_Laundry/app/src/main/res/layout/adapter.xml" value="0.20416666666666666" />
+        <entry key="..\:/Project_Laundry/app/src/main/res/layout/adaptersetrika.xml" value="0.20416666666666666" />
+        <entry key="..\:/Project_Laundry/app/src/main/res/layout/tampil_setrika.xml" value="0.20416666666666666" />
       </map>
     </option>
   </component>
-  <component name="ProjectRootManager" version="2" languageLevel="JDK_17" default="true" project-jdk-name="jbr-17" project-jdk-type="JavaSDK">
+  <component name="ProjectRootManager" version="2" languageLevel="JDK_11" default="true" project-jdk-name="Android Studio default JDK" project-jdk-type="JavaSDK">
     <output url="file://$PROJECT_DIR$/build/classes" />
   </component>
   <component name="ProjectType">

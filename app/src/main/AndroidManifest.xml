@@ -23,16 +23,7 @@
             android:name=".edit_laundry"
             android:exported="false" />
         <activity
-            android:name=".inputsetrika"
-            android:exported="false" />
-        <activity
             android:name=".inputlaundry"
-            android:exported="false" />
-        <activity
-            android:name=".pilihansetrika"
-            android:exported="false" />
-        <activity
-            android:name=".pilihcucian"
             android:exported="false" />
         <activity
             android:name=".dashboard"

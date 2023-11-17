@@ -8,7 +8,7 @@
     android:background="@color/biru">
 
     <ImageView
-        android:id="@+id/aregis"
+        android:id="@+id/userregis"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="148dp"

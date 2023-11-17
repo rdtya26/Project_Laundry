@@ -16,7 +16,6 @@ class register : AppCompatActivity() {
     private lateinit var etPass: EditText
     private lateinit var btnDaftar: AppCompatButton
 
-    private lateinit var register: register
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
@@ -26,8 +25,6 @@ class register : AppCompatActivity() {
         etemial = findViewById(R.id.hintemail)
         etPass = findViewById(R.id.hintpass)
         btnDaftar = findViewById(R.id.btndaftar)
-
-
 
         btnDaftar.setOnClickListener {
             Daftar()
@@ -48,7 +45,7 @@ class register : AppCompatActivity() {
             return
         }
         if (email != pass) {
-            Toast.makeText(this, "Tidak Sesuai", Toast.LENGTH_SHORT).show()
+            Toast.makeText(this, "sukses", Toast.LENGTH_SHORT).show()
             return
         }
 
