@@ -28,7 +28,6 @@
         <entry key="..\:/Project_Laundry/app/src/main/res/layout/activity_detail.xml" value="0.20416666666666666" />
         <entry key="..\:/Project_Laundry/app/src/main/res/layout/activity_edit_laundry.xml" value="0.20416666666666666" />
         <entry key="..\:/Project_Laundry/app/src/main/res/layout/activity_inputcucian.xml" value="0.20416666666666666" />
-        <entry key="..\:/Project_Laundry/app/src/main/res/layout/activity_inputlaundry.xml" value="0.17592592592592593" />
         <entry key="..\:/Project_Laundry/app/src/main/res/layout/activity_inputsetrika.xml" value="0.20416666666666666" />
         <entry key="..\:/Project_Laundry/app/src/main/res/layout/activity_login.xml" value="0.20416666666666666" />
         <entry key="..\:/Project_Laundry/app/src/main/res/layout/activity_main.xml" value="0.20416666666666666" />
@@ -37,6 +36,12 @@
         <entry key="..\:/Project_Laundry/app/src/main/res/layout/activity_regis.xml" value="0.20416666666666666" />
         <entry key="..\:/Project_Laundry/app/src/main/res/layout/activity_register.xml" value="0.20416666666666666" />
         <entry key="..\:/Project_Laundry/app/src/main/res/layout/activity_tampildata.xml" value="0.20416666666666666" />
+        <entry key="..\:/zahwa psts/zahwa_folder/app/src/main/res/layout/activity_dashboard.xml" value="0.20416666666666666" />
+        <entry key="..\:/zahwa psts/zahwa_folder/app/src/main/res/layout/activity_inputlaundry.xml" value="0.20416666666666666" />
+        <entry key="..\:/zahwa psts/zahwa_folder/app/src/main/res/layout/activity_login.xml" value="0.20416666666666666" />
+        <entry key="..\:/zahwa psts/zahwa_folder/app/src/main/res/layout/activity_tampildata.xml" value="0.13796296296296295" />
+        <entry key="..\:/zahwa psts/zahwa_folder/app/src/main/res/layout/adaptersetrika.xml" value="0.20416666666666666" />
+        <entry key="..\:/zahwa psts/zahwa_folder/app/src/main/res/layout/tampil_setrika.xml" value="0.20416666666666666" />
       </map>
     </option>
   </component>
