@@ -10,7 +10,7 @@
     android:backgroundTint="@color/biru">
 
     <TextView
-        android:id="@+id/nameadapter"
+        android:id="@+id/nameadapterset"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="User Name,"
@@ -30,19 +30,8 @@
         android:layout_marginTop="80dp"/>
 
 
-
-    <TextView
-        android:id="@+id/estimasi"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="ESTIMASI"
-        android:textSize="20dp"
-        android:textStyle="bold"
-        android:layout_marginTop="150dp"
-        android:layout_marginStart="20dp"/>
-
     <ImageButton
-        android:id="@+id/titik3"
+        android:id="@+id/titik3set"
         android:layout_width="90dp"
         android:layout_height="50dp"
         android:background="@color/white"
@@ -51,7 +40,7 @@
         android:src="@drawable/ic_baseline_more_vert_24" />
 
     <ImageButton
-        android:id="@+id/edit"
+        android:id="@+id/editset"
         android:layout_width="90dp"
         android:layout_height="50dp"
         android:background="@color/white"
@@ -61,7 +50,7 @@
         android:src="@drawable/ic_baseline_edit_24" />
 
     <ImageButton
-        android:id="@+id/hapus"
+        android:id="@+id/hapusset"
         android:layout_width="90dp"
         android:layout_height="50dp"
         android:background="@color/white"

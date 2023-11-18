@@ -122,12 +122,12 @@
         android:id="@+id/estimasidetail"
         android:layout_width="104dp"
         android:layout_height="97dp"
+        android:layout_marginStart="48dp"
         android:text="2-3 hari"
         android:textSize="20dp"
         android:textStyle="bold"
-        android:layout_marginStart="50dp"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@id/txtdetail4"/>
+        app:layout_constraintTop_toBottomOf="@id/txtdetail4" />
 
     <TextView
         android:id="@+id/txtdetail5"

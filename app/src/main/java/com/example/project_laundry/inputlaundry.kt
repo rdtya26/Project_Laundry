@@ -1,9 +1,7 @@
 package com.example.project_laundry
-
+import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
-import android.widget.ArrayAdapter
-import android.widget.Spinner
 import com.example.project_laundry.ROOM.*
 import com.example.project_laundry.databinding.ActivityInputlaundryBinding
 import kotlinx.coroutines.CoroutineScope
@@ -21,38 +19,49 @@ class inputlaundry : AppCompatActivity() {
         setContentView(binding.root)
         binding.inputData.setOnClickListener {
             this.insertcucian()
+            this.insertsetrika()
         }
+
     }
     private fun insertcucian(){
         CoroutineScope(Dispatchers.IO).launch {
             db.laundrydao().simpan(
                 Laundry(
-                    idcuci = 0,
+                    0,
                     binding.inputnamacuci.text.toString(),
                     binding.inputnocuci.text.toString().toInt(),
                     binding.inputberatcuci.text.toString(),
 
                 )
             )
+            binding.inputnamacuci.setText("")
+            binding.inputnocuci.setText("")
+            binding.inputberatcuci.setText("")
         }
     }
+
+
     private fun insertsetrika(){
         CoroutineScope(Dispatchers.IO).launch {
             db.laundrydao().simpan2(
                 Laundry2(
-                    id = 0,
+                    0,
                     binding.inputnamacuci.text.toString(),
                     binding.inputnocuci.text.toString().toInt(),
                     binding.inputberatcuci.text.toString(),
-
                 )
             )
+            binding.inputnamacuci.setText("")
+            binding.inputnocuci.setText("")
+            binding.inputberatcuci.setText("")
         }
+        startActivity(Intent(this,tampildata::class.java))
     }
 
-    override fun onResume() {
+
+   /* override fun onResume() {
         super.onResume()
         this.insertsetrika()
-    }
 
+    }*/
 }

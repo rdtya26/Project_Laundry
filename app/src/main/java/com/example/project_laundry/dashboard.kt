@@ -4,7 +4,6 @@ import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.widget.ImageButton
-import android.widget.Toast
 
 class dashboard : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
@@ -16,14 +15,13 @@ class dashboard : AppCompatActivity() {
 
 
         cuci.setOnClickListener {
-            Toast.makeText(this, "cuci button", Toast.LENGTH_SHORT).show()
+           startActivity(Intent(this,inputlaundry::class.java))
         }
         setrika.setOnClickListener {
-            Toast.makeText(this, "setrika button", Toast.LENGTH_SHORT).show()
+            startActivity(Intent(this,inputlaundry::class.java))
         }
-        startActivity(
-                Intent(this, register::class.java)
-        )
+
+
 
     }
 }

@@ -20,7 +20,6 @@ class tampildata : AppCompatActivity() {
     private lateinit var binding: ActivityTampildataBinding
     private val db by lazy { database_laundry(this) }
     private lateinit var adapterlaundry: adapterlaundry
-    private lateinit var databaseLaundry: database_laundry
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
@@ -97,26 +96,13 @@ class tampildata : AppCompatActivity() {
     }
 
     private fun updateData(laundry: Laundry){
-       val dialog = AlertDialog.Builder(this)
-        dialog.apply {
-            setTitle("konfirmasi edit laundry")
-            setMessage("apakah kamu yakin akan mengubah data ${laundry.idcuci}?")
-            setNegativeButton("batal"){
-                dialogInterface:DialogInterface,i:Int->
-                dialogInterface.dismiss()
-            }
-            setPositiveButton("Edit"){
-                dialogInterface:DialogInterface,i:Int->
-                dialogInterface.dismiss()
-                CoroutineScope(Dispatchers.IO).launch {
-                    db.laundrydao().ubah(laundry)
-                    finish()
-                    startActivity(intent)
-                }
-            }
-            dialog.show()
-        }
+        startActivity(Intent(this,edit_laundry::class.java)
+            .putExtra("idadmin", laundry.idcuci.toString()))
     }
+
+
+
+
 
     fun getdata(){
         binding.listcuci.layoutManager = LinearLayoutManager(this)
